@@ -1,0 +1,16 @@
+.shower {
+  --slide-ratio: calc(16 / 9);
+}
+.slide::after {
+  visibility: hidden;
+}
+.d-n {
+  display: none !important;
+}
+
+.general-figures {
+  display: flex;
+}
+.general-figures__item {
+  flex-basis: 50%;
+}

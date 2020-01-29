@@ -123,13 +123,13 @@ pre.prism-live>code:empty::before {
 }
 
 .slide code {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .slide pre code {
-  line-height: 1;
-  padding: 0;
-  margin: 0;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
 }
 
 textarea.prism-live,
@@ -143,6 +143,17 @@ pre.prism-live {
     padding-bottom: 0;
     line-height: 20px;
 }
+
 .output {
-  display: inline !important;
+    display: inline !important;
+}
+
+kbd {
+    background-color: black !important;
+    padding: 0.4em !important;
+}
+
+.p--small {
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
 }

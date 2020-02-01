@@ -157,3 +157,38 @@ kbd {
     line-height: 1.2 !important;
     margin-bottom: 12px !important;
 }
+
+
+.code-example {
+    font-size: 26px !important;
+    white-space: pre-wrap !important;
+    max-width: 100% !important;
+    line-height: 1.5 !important;
+}
+
+.code-example--sm {
+    font-size: 14px !important;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+iframe {
+    height: 470px;
+    transform: scale(1.1);
+}
+
+iframe pre {
+    font-size: 16px !important;
+}
+
+img {
+    max-height: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.attr-val {
+    color: hsl(350, 40%, 70%) !important;
+}

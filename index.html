@@ -686,6 +686,77 @@
         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
     </section>
 
+    <section class="slide">
+        <h2 class="shout" style="text-align: center">
+            Чего-то не хватает...
+            <br/>
+            🤔
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="text-align: center">
+            Управление темпом анимации!💡
+        </h2>
+    </section>
+
+    <section class="slide">
+        <ul>
+            <li><kbd>calcMode</kbd></li>
+            <li><kbd>keyTimes</kbd></li>
+            <li><kbd>keySplines</kbd></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <p><kbd>calcMode</kbd></p>
+        <ul>
+            <li>
+                <kbd class="attr-val">linear</kbd> - default;
+            </li>
+
+            <li>
+                <kbd class="attr-val">discrete</kbd> - аналог <kbd>steps()</kbd> в css;
+            </li>
+
+            <li>
+                <kbd class="attr-val">paced</kbd> -  анимация рассчитывает расстояние между всеми значениями,
+                и делит время так, чтобы получить постоянную скорость изменения на всем протяжении анимации;
+            </li>
+
+            <li>
+                <kbd class="attr-val">spline</kbd> - позволяет задавать в <kbd>keyTimes</kbd> временые интервалы,
+                а в <kbd>keySplines</kbd> - управляющие точки для каждого интервала (функцию плавности);
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <p><kbd>keyTimes</kbd> - принимает промежутки (интервалы) времени:
+        <br>
+        <kbd class="attr-val">"0.1, 0.15, 0.5"</kbd>
+        <br>
+        <kbd class="attr-val">"0; 1"</kbd>
+        </p>
+        <p><kbd>keySplines</kbd> - принимает управляющие точки для каждого интервала (значения ф-ции Безье).
+            <br>
+            <kbd class="attr-val">"0.17, 0.67, 0.85, 0.06; 0, 0.6, 1. 0.56; 0, 0.2, 0, 0.8"</kbd>
+            <br>
+            <kbd class="attr-val">"0, 0.2, 0, 0.8"</kbd>
+        </p>
+    </section>
+
+    <section class="slide">
+        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="y_kosovych" data-slug-hash="WNbVOaY" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="SMIL 5">
+            <span>See the Pen <a href="https://codepen.io/y_kosovych/pen/WNbVOaY">
+            SMIL 5</a> by Yaroslav (<a href="https://codepen.io/y_kosovych">@y_kosovych</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+
+
 
     <div class="progress"></div>
     <script src="node_modules/shower-core/shower.min.js"></script>

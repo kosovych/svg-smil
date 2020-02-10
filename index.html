@@ -22,6 +22,16 @@
     </section>
 
     <section class="slide">
+        <h2>Преймущества</h2>
+        <ul>
+            <li>Высокий контроль анимаций;</li>
+            <li>Возможность анимировать свойства, которые не доступны из CSS;</li>
+            <li>Морфинг элементов;</li>
+            <li>Возможность связывать анимации и устанавливать зависимости между анимациями;</li>
+        </ul>
+    </section>
+
+    <section class="slide">
         <h2>Основные фигуры</h2>
         <ul class="general-figures">
             <li class="general-figures__item">
@@ -109,7 +119,7 @@
                     <td>
                         <div id="ta-1-code" class="code-wrapper" data-textareaid="ta-1">
     <svg viewBox="0 0 300 300" width="300" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <line x1="10" y1="20" x2="200" y2="250" stroke="red" stroke-width="10" />
+        <line x1="10" y1="20" x2="200" y2="250" stroke="black" stroke-width="10" />
     </svg>
                         </div>
                     </td>
@@ -328,16 +338,16 @@
                               <kbd>d</kbd> - содержит серию команд и параметров этих команд для построения фигуры.
                             </p>
                             <p class="p--small">
-                              <kbd>M x y</kbd> - Перепестится к  X Y.
+                              <kbd>M x y</kbd> - Переместиться к  X Y.
                             </p>
                             <p class="p--small">
                               <kbd>L x y</kbd> - Отрисовка линии с координатами X Y.
                             </p>
                             <p class="p--small">
-                              <kbd>H x y</kbd> - Отрисовка горизонтальной линии с кочечной координатой Y.
+                              <kbd>H x</kbd> - Отрисовка горизонтальной линии с кочечной координатой Y.
                             </p>
                             <p class="p--small">
-                              <kbd>V x y</kbd> - Отрисовка вертикальной линии с кочечной координатой X.
+                              <kbd>V y</kbd> - Отрисовка вертикальной линии с кочечной координатой X.
                             </p>
                             <p class="p--small">
                                 <kbd>Z</kbd> - Замыкает фигуру.
@@ -616,18 +626,17 @@
     </section>
 
     <section class="slide">
-        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="y_kosovych" data-slug-hash="yLymyQg" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="2 SVG anim">
+        <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="html,result" data-user="y_kosovych" data-slug-hash="yLymyQg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="2 SVG anim">
             <span>See the Pen <a href="https://codepen.io/y_kosovych/pen/yLymyQg">
             2 SVG anim</a> by Yaroslav (<a href="https://codepen.io/y_kosovych">@y_kosovych</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
-            </p>
-            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
     </section>
 
     <section class="slide">
         <h3>Еще немного магии ✨✨✨</h3>
         <img src="./pictures//carbon-2.png" alt="">
-        </pre>
     </section>
 
     <section class="slide">
@@ -814,6 +823,8 @@
     </section>
 
     <section class="slide">
+        <p>Позиция анимируемого обьекта трансформируется (сдвигается) на значения из данных траектории.</p>
+        <p>Решение:</p>
         <ul>
             <li>обнулить начальные координаты;</li>
             <li>любым способом обнулить начальные координыты</li>
@@ -854,7 +865,7 @@
         <p>Для морфинга нам подойдет только елемент <kbd>path</kbd></p>
         <p>Ключевые атрибуты</p>
         <ul>
-            <li><kbd>attributeName="d"</kbd> - аказываем атрибук <kbd>d</kbd> амимированый;</li>
+            <li><kbd>attributeName="d"</kbd> - указываем атрибут <kbd>d</kbd> как анимируемый;</li>
             <li><kbd>values</kbd> - список, разделенный <kbd>;</kbd>, состоящий со значений атрибута d="..." (по аналогии с <kbd><path d="..."/></kbd>);</li>
             <li>остальные атрибуты управления анимацией (<kbd>calcMode</kbd>, <kbd>keySplines</kbd>, <kbd>calcMode</kbd>, <kbd>dur</kbd> ...)</li>
         </ul>
